@@ -78,14 +78,14 @@
   height: 16px;
   width: 16px;
   margin: 0 3px;
-  background-color: #acc;
+  background-color: rgba(103, 103, 103, 0.95);
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.5s ease;
 }
 
 .enable, .dots:hover {
-  background-color: #717161;
+  background-color: #000000;
 }
 
 /* Faint animation */
@@ -110,7 +110,6 @@
 }
 
 .ViewMore a:hover{
-    color: #9e21c1;
     transform: scale(1.1);
 }
 

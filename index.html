@@ -29,6 +29,9 @@
             <li><a href="#sectioncontact" class="link">Contact</a></li>
         </div>
     </nav>
+
+    <!-- Header -->
+
     <div id="home" class="header">
         <div class="text">
             <h1>See your concept <br>become a reality</h1>
@@ -50,117 +53,144 @@
         </div>
     </div>
 
-    <h1 id="sectionabout" class="page-section">About Me</h1>
+    <!-- About Me -->
 
-    <div class="about">
-        <div class="about-text">
-            <div class="abt-img">
-                My Photo
-                <!-- <img src="myPhoto.jpg" class="my-img" alt="myPhoto"> -->
-            </div>
-            <h3 class="about-detail">As a front-end developer, I'm passionate about creating visually stunning and
-                user-friendly websites. In HTML, CSS, and JavaScript, I help bring ideas to life, creating delightful
-                online experiences. Let's collaborate to make your visions a reality. </h3>
+    <div class="aboutParent">
+        <div class="abouttitleDiv">
+            <i class="fas fa-user user-icon"></i>
+            <h1 id="sectionabout" class="page-section">About Me</h1>
         </div>
-    </div>
-
-    <h1 id="sectionedu" class="page-section">Education</h1>
-
-    <div class="education">
-        <div class="card">
-            <img src="../assets//kws.jpg" class="edu-img">
-            <div class="HS">
-                <h2 class="edu-details">Kahtmandu World School</h2>
-                <h3 class="edu-details">Education : +2 Science</h3>
-                <h4 class="edu-details">Batch : 2018</h4>
-                <h4 class="edu-details">CGPA : 3.57</h4>
-            </div>
-        </div>
-        <div class="card">
-            <img src="../assets//ku.jpg" class="edu-img">
-            <div class="BC">
-                <h2 class="edu-details">Kahtmandu University</h2>
-                <h3 class="edu-details">Education : B.Sc. in Computer Science</h3>
-                <h4 class="edu-details">Batch : 2020</h4>
-                <h4 class="edu-details">CGPA : </h4>
+        <div class="about">
+            <div class="about-text">
+                <div class="abt-img">
+                    My Photo
+                    <!-- <img src="myPhoto.jpg" class="my-img" alt="myPhoto"> -->
+                </div>
+                <h3 class="about-detail">As a front-end developer, I'm passionate about creating visually stunning and
+                    user-friendly websites. In HTML, CSS, and JavaScript, I help bring ideas to life, creating
+                    delightful
+                    online experiences. Let's collaborate to make your visions a reality. </h3>
             </div>
         </div>
     </div>
 
-    <h1 id="sectionskills" class="page-section">Tech Skills</h1>
+    <!-- Education -->
 
-    <div class="skills">
-        <div class="skills-img"><img src="../assets//html.png"></div>
-        <div class="skills-img"><img src="../assets//css.png"></div>
-        <div class="skills-img"><img src="../assets//js.png"></div>
-        <div class="skills-img"><img src="../assets//react.png"></div>
-        <div class="skills-img"><img src="../assets//c++.png"></div>
-        <div class="skills-img"><img src="../assets//python.png"></div>
-    </div>
-
-    <h1 id="sectionprojects" class="page-section">My Projects</h1>
-
-    <div class="projects">
-        <!-- Slideshow container -->
-        <div class="slideshow-project-container fade">
-
-            <!-- Full images with numbers and message Info -->
-            <div class="Project-containers">
-                <div class="MessageInfo">1 / 3</div>
-                <div class="Carousel_img"><img src="../assets//sirani.png" class="car-img"></div>
-                <div class="Project-Info">Sirani - Your Therapy Buddy</div>
-            </div>
-
-            <div class="Project-containers">
-                <div class="MessageInfo">2 / 3</div>
-                <div class="Carousel_img"><img src="../assets//ciao.png" class="car-img"></div>
-                <div class="Project-Info">CIAO - Web App for Generative Art</div>
-            </div>
-
-            <div class="Project-containers">
-                <div class="MessageInfo">3 / 3</div>
-                <div class="Carousel_img"><img src="../assets//sentisurfer.png" class="car-img"></div>
-                <div class="Project-Info">Senti-Sufer - Chrome Extension for Sentiment Analysis of Youtube Comments
+    <div class="educationParent">
+        <div class="educationtitleDiv">
+            <i class="fas fa-graduation-cap edu-icon"></i>
+            <h1 id="sectionedu" class="page-section ">Education</h1>
+        </div>
+        <div class="education">
+            <div class="card">
+                <img src="../assets//kws.jpg" class="edu-img">
+                <div class="HS">
+                    <h2 class="edu-details">Kahtmandu World School</h2>
+                    <h3 class="edu-details">Education : +2 Science</h3>
+                    <h4 class="edu-details">Batch : 2018</h4>
+                    <h4 class="edu-details">CGPA : 3.57</h4>
                 </div>
             </div>
-
-            <!-- Back and forward buttons -->
-            <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+            <div class="card">
+                <img src="../assets//ku.jpg" class="edu-img">
+                <div class="BC">
+                    <h2 class="edu-details">Kahtmandu University</h2>
+                    <h3 class="edu-details">Education : B.Sc. in Computer Science</h3>
+                    <h4 class="edu-details">Batch : 2020</h4>
+                    <h4 class="edu-details">CGPA : </h4>
+                </div>
+            </div>
         </div>
-        <br>
-
-        <!-- The circles/dots -->
-        <div style="text-align:center">
-            <span class="dots" onclick="currentSlide(1)"></span>
-            <span class="dots" onclick="currentSlide(2)"></span>
-            <span class="dots" onclick="currentSlide(3)"></span>
-        </div>
-        <div class="ViewMore"><a href="projectsdetails.html">View More</a></div>
     </div>
 
-    <h1 id="sectioncontact" class="page-section">Contact Me</h1>
+    <!-- Skills -->
 
-    <div class="contact">
-        <div class="contactform">
-            <div class="left-part">
-                <i class="fas fa-envelope"></i>
-                <i class="fas fa-at"></i>
-                <i class="fas fa-mail-bulk"></i>
+    <div class="skillsParent">
+        <div class="skillstitleDiv">
+            <i class="fas fa-code code-icon"></i>
+            <h1 id="sectionskills" class="page-section">Tech Skills</h1>
+        </div>
+        <div class="skills">
+            <div class="skills-img"><img src="../assets//html.png"></div>
+            <div class="skills-img"><img src="../assets//css.png"></div>
+            <div class="skills-img"><img src="../assets//js.png"></div>
+            <div class="skills-img"><img src="../assets//react.png"></div>
+            <div class="skills-img"><img src="../assets//c++.png"></div>
+            <div class="skills-img"><img src="../assets//python.png"></div>
+        </div>
+    </div>
+
+    <!-- Projects -->
+
+    <div class="projectsParent">
+        <div class="projecttitleDiv">
+            <i class="fas fa-project-diagram prj-icon"></i>
+            <h1 id="sectionprojects" class="page-section">My Projects</h1>
+        </div>
+        <div class="projects">
+            <div class="slideshow-project-container fade">
+                <div class="Project-containers">
+                    <div class="MessageInfo">1 / 3</div>
+                    <div class="Carousel_img"><img src="../assets//sirani.png" class="car-img"></div>
+                    <div class="Project-Info">Sirani - Your Therapy Buddy</div>
+                </div>
+                <div class="Project-containers">
+                    <div class="MessageInfo">2 / 3</div>
+                    <div class="Carousel_img"><img src="../assets//ciao.png" class="car-img"></div>
+                    <div class="Project-Info">CIAO - Web App for Generative Art</div>
+                </div>
+                <div class="Project-containers">
+                    <div class="MessageInfo">3 / 3</div>
+                    <div class="Carousel_img"><img src="../assets//sentisurfer.png" class="car-img"></div>
+                    <div class="Project-Info">Senti-Sufer - Chrome Extension for Sentiment Analysis of Youtube Comments
+                    </div>
+                </div>
+
+                <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="forward" onclick="plusSlides(1)">&#10095;</a>
             </div>
-            <form method="post" action="https://formspree.io/f/xqkvalvz">
-                <h1 class="contactme">Please leave your details here</h1>
-                <div class="info">
-                    <input class="fname" type="text" name="name" placeholder="Full name">
-                    <input type="text" name="email" placeholder="Email">
-                    <input type="text" name="phonenumber" placeholder="Phone number">
+
+            <br>
+
+            <div style="text-align:center">
+                <span class="dots" onclick="currentSlide(1)"></span>
+                <span class="dots" onclick="currentSlide(2)"></span>
+                <span class="dots" onclick="currentSlide(3)"></span>
+            </div>
+            <div class="ViewMore"><a href="projectsdetails.html">View More</a></div>
+        </div>
+    </div>
+
+    <!-- Contact Me -->
+
+    <div class="contactParent">
+        <div class="contacttitleDiv">
+            <i class="fas fa-envelope-square env-square"></i>
+            <h1 id="sectioncontact" class="page-section contact-title">
+                Contact Me
+            </h1>
+        </div>
+        <div class="contact">
+            <div class="contactform">
+                <div class="left-part">
+                    <i class="fas fa-envelope"></i>
+                    <i class="fas fa-at"></i>
+                    <i class="fas fa-mail-bulk"></i>
                 </div>
-                <p class="msg">Message</p>
-                <div>
-                    <textarea rows="4" name="message"></textarea>
-                </div>
-                <button type="submit" href="/" class="submit">Submit</button>
-            </form>
+                <form method="post" action="https://formspree.io/f/xqkvalvz">
+                    <h1 class="contactme">Please leave your details here</h1>
+                    <div class="info">
+                        <input class="fname" type="text" name="name" placeholder="Full name">
+                        <input type="email" name="email" placeholder="Email">
+                        <input type="tel" name="phonenumber" placeholder="Phone number">
+                    </div>
+                    <p class="msg">Message</p>
+                    <div>
+                        <textarea rows="4" name="message"></textarea>
+                    </div>
+                    <button type="submit" href="/" class="submit">Submit</button>
+                </form>
+            </div>
         </div>
     </div>
 

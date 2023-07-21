@@ -9,20 +9,22 @@
     width:50%;
     background: rgba(255, 255, 255, 0.69);
     border-radius: 1rem;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(2.7px);
-    -webkit-backdrop-filter: blur(2.7px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(1.7px);
+    -webkit-backdrop-filter: blur(1.7px);
     border: 1px solid rgba(255, 255, 255, 0.9);
     padding:2rem;
 }  
-  
   
   form {
     padding: 25px;
     margin: 25px;
     box-shadow: 0 2px 5px #f5f5f5; 
-    background: #f5f5f5; 
-    border-radius: 1rem;
+    border-radius: 1rem; 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(1.7px);
+    -webkit-backdrop-filter: blur(1.7px);
+    border: 1px solid rgba(255, 255, 255, 0.9);
     }
 
     .fas {
@@ -52,20 +54,26 @@
     width: 100%;
     padding: 8px;
     margin-bottom: 20px;
-    border: 1px solid #000000;
+    border: 1px solid #ccc;
     outline: none;
     border-radius: 0.2rem;
+    backdrop-filter: blur(1.7px);
+    -webkit-backdrop-filter: blur(1.7px);
     }
 
     input::placeholder {
     color: #666;
     }
 
+    input:focus, textarea:focus {
+    background: #f5f5f5;
+    }
+
     .submit {
     width: 100%;
     padding: 10px;
     border: none;
-    background: #9e21c1;
+    background: rgb(38, 38, 38);
     font-size: 16px;
     font-weight: 400;
     border-radius: 0.2rem;
@@ -74,7 +82,7 @@
     }
 
     .submit:hover {
-    background: #781394;
+    background: #000000;
     cursor: pointer;
     }
     
