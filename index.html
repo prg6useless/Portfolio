@@ -180,13 +180,13 @@
                 <form method="post" action="https://formspree.io/f/xqkvalvz">
                     <h1 class="contactme">Please leave your details here</h1>
                     <div class="info">
-                        <input class="fname" type="text" name="name" placeholder="Full name">
-                        <input type="email" name="email" placeholder="Email">
-                        <input type="tel" name="phonenumber" placeholder="Phone number">
+                        <input class="fname" type="text" name="name" placeholder="Full name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="tel" name="phonenumber" placeholder="Phone number" required>
                     </div>
                     <p class="msg">Message</p>
                     <div>
-                        <textarea rows="4" name="message"></textarea>
+                        <textarea rows="4" name="message" required></textarea>
                     </div>
                     <button type="submit" href="/" class="submit">Submit</button>
                 </form>
