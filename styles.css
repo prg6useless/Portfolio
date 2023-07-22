@@ -24,7 +24,6 @@ body{
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(2.7px);
     -webkit-backdrop-filter: blur(2.7px);
-    border: 1px solid rgba(255, 255, 255, 0.9);
     top: 0;
     left: 0;
     z-index: 999;
@@ -52,6 +51,27 @@ body{
     align-items: center;
 }
 
+.responsive_menu{
+    display:none;
+    position: fixed;
+    top: 5rem;
+    padding-right: 5rem; 
+    text-align: right;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.69);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.7px);
+    -webkit-backdrop-filter: blur(2.7px);
+}
+
+.navbar_icon{
+    position: absolute;
+    right: 3rem;
+    top: 1.5rem;
+    align-self: center;
+}
+
+
 li{
     list-style: none;
     cursor: pointer;
@@ -69,10 +89,13 @@ li a{
     border-bottom: 2px solid #070aaa !important;
   }
 
+  .navbar_icon{
+    display:none;
+  }
 
 .header{
     color: black;
-    padding:16rem 8rem 8rem 8rem;
+    padding:14rem 8rem 8rem 8rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -85,6 +108,9 @@ li a{
     padding-top:10px;
 }
 
+.img{
+    margin:1rem;
+}
 /* .aboutParent{
     background-color: #6095e3;
 } */
@@ -352,3 +378,64 @@ footer{
      opacity: .4;
      font-weight: 200;
  }
+
+
+@media  screen and (max-width:1024px) {
+    .navbar_icon{
+        display: block;
+    }
+
+    .menu li .link{
+        display: none;
+    }
+}
+
+@media screen and (max-width:950px){
+    .about-text{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:706px){
+    .card{
+        flex-direction: column;
+    }
+
+
+    .edu-img{
+        border-radius: 1rem 1rem 0rem 0rem;
+        width:100%;
+    }
+}
+
+@media screen and (max-width:650px){
+    .about-text{
+        justify-content: space-around;
+    }
+    .img{
+        margin-top:1rem;
+    }
+}
+
+@media screen and (max-width:500px){
+
+    .abt-img{
+        height:150px;
+    }
+    .about-detail {
+        height:200px;
+        overflow-x:scroll;
+    }
+
+    .skills-img{
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:462px){
+    .about-detail {
+        margin-top:50px;
+        height:200px;
+        overflow-x:scroll;
+    }
+}

@@ -39,9 +39,13 @@
     transform: rotate(10deg);
     }
 
-    .contactme{
+    .contactme_one,.contactme_two{
       margin: 0 0 20px;
       font-weight: 400;
+    }
+
+    .contactme_two{
+      display: none;
     }
 
     .msg{
@@ -105,3 +109,39 @@
     margin-left: 28%;
     }
     }
+
+    @media screen and (max-width:1250px){
+      .left-part{
+          display: none;
+      }
+  
+      .right-part{
+          width: 75%;
+      }
+  }
+
+    @media screen and (max-width:768px){
+      
+      .contactme_one{
+        display: none;
+      }
+      .contactme_two{
+        display: block;
+      }
+      
+      .contactform{
+          width: 75%;
+      }
+  }
+
+  @media screen and (max-width:568px){
+    .contactform{
+        width: 90%;
+    }
+
+    .right-part{
+        width: 100%;
+    }
+  }
+  
+

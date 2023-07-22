@@ -22,14 +22,13 @@
     width:auto;
     height:400px;
     object-fit: cover;
-    align-self: center;
 }
 
 /* forward & Back buttons */
 .Back, .forward {
   cursor: pointer;
   position: absolute;
-  top: 48%;
+  top: 45%;
   width: auto;
   margin-top: -23px;
   padding: 17px;
@@ -122,3 +121,30 @@
   from {opacity: .5}
   to {opacity: 2}
 }
+
+@media screen and (max-width: 850px) {
+  .Back, .forward {
+    top: 40%;
+  }
+.car-img{
+    height:300px;
+}
+}
+
+@media screen and (max-width: 650px) {
+  .Back, .forward {
+    top: 35%;
+  }
+  .car-img{
+      height:200px;
+  }
+  }
+
+  @media screen and (max-width: 450px) {
+    .Back, .forward {
+      top: 30%;
+    }
+    .car-img{
+        height:150px;
+    }
+    }

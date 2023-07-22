@@ -21,7 +21,19 @@
 
     <nav class="navbar">
         <li class="home"><a href="#home" class="link active">Home</a></li>
-        <div class="menu">
+        <div class="menu" id="menu_bar">
+            <li id="nav_links"><a href="#sectionabout" class="link">About Me</a></li>
+            <li id="nav_links"><a href="#sectionedu" class="link">Education</a></li>
+            <li id="nav_links"><a href="#sectionskills" class="link">Skills</a></li>
+            <li id="nav_links"><a href="#sectionprojects" class="link">Projects</a></li>
+            <li id="nav_links"><a href="#sectioncontact" class="link">Contact</a></li>
+            <li>
+                <a href="javascript:void(0);" class="navbar_icon" onclick="navMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </li>
+        </div>
+        <div class="responsive_menu" id="resp_bar">
             <li><a href="#sectionabout" class="link">About Me</a></li>
             <li><a href="#sectionedu" class="link">Education</a></li>
             <li><a href="#sectionskills" class="link">Skills</a></li>
@@ -177,8 +189,9 @@
                     <i class="fas fa-at"></i>
                     <i class="fas fa-mail-bulk"></i>
                 </div>
-                <form method="post" action="https://formspree.io/f/xqkvalvz">
-                    <h1 class="contactme">Please leave your details here</h1>
+                <form method="post" action="https://formspree.io/f/xqkvalvz" class="right-part">
+                    <h1 class="contactme_one">Please leave your details here</h1>
+                    <h1 class="contactme_two">Your Details</h1>
                     <div class="info">
                         <input class="fname" type="text" name="name" placeholder="Full name" required>
                         <input type="email" name="email" placeholder="Email" required>
@@ -219,6 +232,20 @@
 
     <script src="navbar.js"></script>
     <script src=" project_carousel.js"></script>
+    <script>
+        function navMenu() {
+            var x = document.getElementById("nav_links");
+            var y = document.getElementById("resp_bar");
+            if (x.style.display == "block") {
+                x.style.display = "none";
+                y.style.display = "block";
+            }
+            else {
+                x.style.display = "block";
+                y.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>
