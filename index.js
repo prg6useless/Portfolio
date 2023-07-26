@@ -35,3 +35,46 @@ for (let i = 0; i < title.length; i++) {
 
   wrap.innerHTML += codeBlock;
 }
+
+let eduCard = document.getElementById("edu_cardDiv");
+
+let eduImg = ["../assets//kws.jpg", "../assets//ku.jpg"];
+let eduName = ["Kahtmandu World School", "Kathmandu University"];
+let eduDetails = [
+  "Education : +2 Science",
+  "Education : B. Sc. in Computer Science",
+];
+let batch = ["Batch : 2018-2020", "Batch : 2020-"];
+let cgpa = ["CGPA : 3.57", "Pursuing"];
+
+for (let i = 0; i < eduName.length; i++) {
+  var eduCode = `       
+<div class="card">
+                <img src="${eduImg[i]}" class="edu-img">
+                <div class="HS">
+                    <h2 class="edu-details">${eduName[i]}</h2>
+                    <h3 class="edu-details">${eduDetails[i]}</h3>
+                    <h4 class="edu-details">${batch[i]}</h4>
+                    <h4 class="edu-details">${cgpa[i]}</h4>
+                </div>
+            </div>`;
+  eduCard.innerHTML += eduCode;
+}
+
+let skillsDiv = document.getElementById("skillsDiv");
+
+skillsImg = [
+  "../assets//html.png",
+  "../assets//css.png",
+  "../assets//js.png",
+  "../assets//react.png",
+  "../assets//c++.png",
+  "../assets//python.png",
+];
+
+for (let i = 0; i < skillsImg.length; i++) {
+  var skillsCode = `            
+  <div class="skills-img"><img src="${skillsImg[i]}"></div>
+  `;
+  skillsDiv.innerHTML += skillsCode;
+}
