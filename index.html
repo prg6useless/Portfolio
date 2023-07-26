@@ -140,23 +140,7 @@
             <h1 id="sectionprojects" class="page-section">My Projects</h1>
         </div>
         <div class="projects">
-            <div class="slideshow-project-container fade">
-                <div class="Project-containers">
-                    <div class="MessageInfo">1 / 3</div>
-                    <div class="Carousel_img"><img src="../assets//sirani.png" class="car-img"></div>
-                    <div class="Project-Info">Sirani - Your Therapy Buddy</div>
-                </div>
-                <div class="Project-containers">
-                    <div class="MessageInfo">2 / 3</div>
-                    <div class="Carousel_img"><img src="../assets//ciao.png" class="car-img"></div>
-                    <div class="Project-Info">CIAO - Web App for Generative Art</div>
-                </div>
-                <div class="Project-containers">
-                    <div class="MessageInfo">3 / 3</div>
-                    <div class="Carousel_img"><img src="../assets//sentisurfer.png" class="car-img"></div>
-                    <div class="Project-Info">Senti-Sufer - Chrome Extension for Sentiment Analysis of Youtube Comments
-                    </div>
-                </div>
+            <div class="slideshow-project-container fade" id="wpr">
 
                 <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="forward" onclick="plusSlides(1)">&#10095;</a>
@@ -230,22 +214,9 @@
         </div>
     </footer>
 
+    <script src="index.js"></script>
     <script src="navbar.js"></script>
     <script src=" project_carousel.js"></script>
-    <script>
-        function navMenu() {
-            var x = document.getElementById("nav_links");
-            var y = document.getElementById("resp_bar");
-            if (x.style.display == "block") {
-                x.style.display = "none";
-                y.style.display = "block";
-            }
-            else {
-                x.style.display = "block";
-                y.style.display = "none";
-            }
-        }
-    </script>
 </body>
 
 </html>

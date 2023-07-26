@@ -20,51 +20,7 @@
     </nav>
 
     <h1 class="projectworks">Projects I've Worked On</h1>
-    <div class="projects-all">
-        <div class="project_card">
-            <img src="../assets/sirani.png" class="prj_card_img" />
-            <h2>Sirani</h2>
-            <h3>Your Therapy Buddy</h3>
-            <p>A simple app that tracks your daily emotions and moods. This app also tracks your sleep routine.</p>
-            <div class="project_link">
-                <div class="sc"><button class="fas fa-code code_icon" onclick="sirani_code()"></button><a
-                        href="https://github.com/prg6useless/sirani.git" target="_blank">Source
-                        Code</a></div>
-                <div class="doc"><button class="far fa-file-pdf doc_icon" onclick="sirani_doc()"></button><a
-                        href="../docs/Sirani_Report.pdf" target="_blank">Documentation</a></div>
-            </div>
-        </div>
-
-        <div class="project_card">
-            <img src="../assets/ciao.png" class="prj_card_img" />
-            <h2>CIAO</h2>
-            <h3>Web App for Generative Art</h3>
-            <p>####</p>
-            <div class="project_link">
-                <div class="sc"><button class="fas fa-code code_icon" onclick="ciao_code()"></button><a
-                        href="https://github.com/prg6useless/ciao.git" target="_blank">Source
-                        Code</a></div>
-                <div class="doc"><button class="far fa-file-pdf doc_icon" onclick="ciao_doc()"></button><a
-                        href="../docs/CIAO_Report.pdf" target="_blank">Documentation</a></div>
-            </div>
-        </div>
-
-        <div class="project_card">
-            <img src="../assets/sentisurfer.png" class="prj_card_img" />
-            <h2>Senti-Sufer</h2>
-            <h3>Chrome Extension for Sentiment Analysis of Youtube Comments</h3>
-            <p>####</p>
-            <div class="project_link">
-                <div class="sc"><button class="fas fa-code code_icon" onclick="sentsurf_code()"></button><a
-                        href="https://github.com/prg6useless/Senti-Surfer-Extension.git" target="_blank">Source
-                        Code</a></div>
-                <div class="doc"><button class="far fa-file-pdf doc_icon" onclick="sentsurf_doc()"></button><a
-                        href="../docs/Senti-Surfer_Report.pdf" target="_blank">Documentation</a></div>
-            </div>
-        </div>
-
-
-
+    <div class="projects-all" id="prj_all">
     </div>
 
     <!-- Footer -->
@@ -90,31 +46,7 @@
         </div>
     </footer>
 
-    <script>
-        function sirani_code() {
-            window.open('https://github.com/prg6useless/sirani.git', '_blank');
-        }
-
-        function sirani_doc() {
-            window.open('../docs/Sirani_Report.pdf', '_blank');
-        }
-
-        function ciao_code() {
-            window.open('https://github.com/prg6useless/ciao.git', '_blank');
-        }
-
-        function ciao_doc() {
-            window.open('../docs/CIAO_Report.pdf', '_blank');
-        }
-
-        function sentsurf_code() {
-            window.open('https://github.com/prg6useless/Senti-Surfer-Extension.git', '_blank');
-        }
-
-        function sentsurf_doc() {
-            window.open('../docs/Senti-Surfer_Report.pdf', '_blank');
-        }
-    </script>
+    <script src="projectdetails.js"></script>
 </body>
 
 </html>

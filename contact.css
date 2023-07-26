@@ -117,7 +117,17 @@
   
       .right-part{
           width: 75%;
+          backdrop-filter: blur(1.7px);
+          background: rgba(255, 255, 255, 0.69);
+          -webkit-backdrop-filter: blur(1.7px);
       }
+      .contactform{
+          width: 60%;
+        border: none;
+        box-shadow: none;
+        background-color: transparent;
+    }
+
   }
 
     @media screen and (max-width:768px){
@@ -137,10 +147,16 @@
   @media screen and (max-width:568px){
     .contactform{
         width: 90%;
+        border: none;
+        box-shadow: none;
+        background-color: transparent;
     }
 
     .right-part{
         width: 100%;
+        backdrop-filter: blur(1.7px);
+        background: rgba(255, 255, 255, 0.69);
+        -webkit-backdrop-filter: blur(1.7px);
     }
   }
   

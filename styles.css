@@ -409,6 +409,11 @@ footer{
 }
 
 @media screen and (max-width:650px){
+    .header{
+        padding: 10rem 0.8rem 2rem 0.8rem;
+        flex-direction: column;
+    }
+    
     .about-text{
         justify-content: space-around;
     }
@@ -433,9 +438,17 @@ footer{
 }
 
 @media screen and (max-width:462px){
+    .about-text{
+        /* flex-direction: column;
+        align-items: center; */
+        margin-bottom:3rem;
+        padding:0;
+    }
+
     .about-detail {
         margin-top:50px;
         height:200px;
+        width:80%;
         overflow-x:scroll;
     }
 }
