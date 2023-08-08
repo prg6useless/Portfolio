@@ -14,17 +14,23 @@ let title = [
   "Sirani - Your Therapy Buddy",
   "CIAO - Web App for Generative Art",
   "Senti-Sufer - Chrome Extension for Sentiment Analysis of Youtube Comments",
+  "Rock Paper Scissors - A simple Rock Paper Scissors Game",
+  "E-Commerce Website - Dummy E-Commerce Website",
+  "E-Commerce Website (React) - E-Commerce Website made using React Commerce.js and Stripe",
 ];
 
 let imgsrc = [
   "../assets//sirani.png",
   "../assets//ciao.png",
   "../assets//sentisurfer.png",
+  "../assets//Game_SS.png",
+  "../assets//e-comm.png",
+  "../assets//e-comm-react.png",
 ];
 
 let wrap = document.getElementById("wpr");
 
-let number = [1, 2, 3];
+let number = [1, 2, 3, 4, 5, 6];
 
 for (let i = 0; i < title.length; i++) {
   var codeBlock = `               <div class="Project-containers">
@@ -34,6 +40,14 @@ for (let i = 0; i < title.length; i++) {
 </div>`;
 
   wrap.innerHTML += codeBlock;
+}
+
+let activeSlide = document.getElementById("active_slide");
+let slideNumber = [1, 2, 3, 4, 5, 6];
+
+for (let i = 0; i < slideNumber.length; i++) {
+  var slideCode = ` <span class="dots" onclick="currentSlide(${slideNumber[i]})"></span>`;
+  activeSlide.innerHTML += slideCode;
 }
 
 let eduCard = document.getElementById("edu_cardDiv");
