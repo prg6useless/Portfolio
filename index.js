@@ -92,3 +92,23 @@ for (let i = 0; i < skillsImg.length; i++) {
   `;
   skillsDiv.innerHTML += skillsCode;
 }
+
+let download_resume_icon = document.getElementById("download_resume");
+
+function download(file) {
+  var element = document.createElement("a");
+  element.setAttribute("href", file);
+  element.setAttribute("download", file);
+  document.body.appendChild(element);
+  element.click();
+  document.body.removeChild(element);
+}
+
+download_resume_icon.addEventListener(
+  "click",
+  () => {
+    let filename = "../docs//Saral_Sainju_Resume.pdf";
+    download(filename);
+  },
+  false
+);
