@@ -1,0 +1,53 @@
+.tagname {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 4rem;
+  padding: 1rem;
+}
+
+.hello {
+  font-size: 2rem;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 4rem;
+}
+
+.links {
+  transition: color 0.2s ease;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 500px;
+}
+
+.each-links {
+  cursor: pointer;
+  transition: color 0.4s ease;
+}
+
+.each-links:hover {
+  color: #d1d5db;
+}
+
+.resumeDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .links {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .links {
+    width: 250px;
+  }
+}
