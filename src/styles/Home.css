@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-evenly;
   margin: 4rem;
+  flex-wrap: wrap;
   padding: 1rem;
 }
 
@@ -38,6 +39,11 @@
   align-items: center;
   padding: 1rem;
   flex-direction: column;
+}
+
+.scrollable-paragraph {
+  max-height: 550px;
+  overflow-y: auto;
 }
 
 @media screen and (max-width: 768px) {

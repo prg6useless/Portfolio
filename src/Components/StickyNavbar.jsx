@@ -1,9 +1,26 @@
 import "../styles/Navbar.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
 export default function StickyNavbar() {
   const [navbar, setNavbar] = useState(false);
+  const [scrollWidth, setScrollWidth] = useState(0);
+
+  const handleScroll = () => {
+    const scrollTop = window.scrollY;
+    const docHeight =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
+    const scrolled = (scrollTop / docHeight) * 100;
+    setScrollWidth(scrolled);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <nav className="w-full navStyles">
@@ -51,7 +68,10 @@ export default function StickyNavbar() {
             </div>
           </div>
         </div>
-        <div className="progress-bar"></div>
+        <div
+          className="progress-bar"
+          style={{ width: `${scrollWidth}%` }}
+        ></div>
         <div>
           <div
             className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 text-right ${
@@ -59,6 +79,17 @@ export default function StickyNavbar() {
             }`}
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+              <li className="text-2xl hover:text-zinc-300">
+                <Link
+                  to="aboutme"
+                  activeClass="active"
+                  smooth
+                  spy
+                  className="navlinks"
+                >
+                  About Me
+                </Link>
+              </li>
               <li className="text-2xl hover:text-zinc-300">
                 <Link
                   to="education"
@@ -90,17 +121,6 @@ export default function StickyNavbar() {
                   className="navlinks"
                 >
                   Projects
-                </Link>
-              </li>
-              <li className="text-2xl hover:text-zinc-300">
-                <Link
-                  to="contact"
-                  activeClass="active"
-                  smooth
-                  spy
-                  className="navlinks"
-                >
-                  Contact Me
                 </Link>
               </li>
             </ul>

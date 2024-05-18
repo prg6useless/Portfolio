@@ -1,18 +1,13 @@
 import "../styles/Home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebook,
-  faTwitter,
-  faGithub,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+import { Icons } from "./projectDetails";
 
 import Resume from "../docs/Saral-Sainju-Resume.pdf";
 
 export default function Home() {
   return (
     <>
-      <div className="pt-10 tagname" id="home">
+      <div className="pt-10 tagname" id="aboutme">
         <div>
           <p className="mt-10">
             <span className="hello">Hi,</span>
@@ -22,93 +17,68 @@ export default function Home() {
             <span className="text-4xl text-gray-300">Full Stack Developer</span>
           </p>
           <div className="links pt-10 flex-wrap">
-            <FontAwesomeIcon
-              icon={faFacebook}
-              className="each-links"
-              onClick={() => {
-                window.open("https://www.facebook.com/saral.sainju/");
-              }}
-            />
-            <FontAwesomeIcon
-              icon={faGithub}
-              className="each-links"
-              onClick={() => {
-                window.open("https://github.com/prg6useless");
-              }}
-            />
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              className="each-links"
-              onClick={() => {
-                window.open(
-                  "https://www.linkedin.com/in/saral-sainju-b24606288/"
-                );
-              }}
-            />
-            <FontAwesomeIcon
-              icon={faTwitter}
-              className="each-links"
-              // onClick={() => {
-              //   window.open(
-              //     "https://instagram.com/saral_sainju?igshid=MjEwN2IyYWYwYw=="
-              //   );
-              // }}
-            />
+            {Icons.map((items, key) => {
+              return (
+                <FontAwesomeIcon
+                  icon={items.icon}
+                  key={key}
+                  className="each-links"
+                  onClick={() => {
+                    window.open(items.iconLink);
+                  }}
+                />
+              );
+            })}
           </div>
         </div>
         <div className="resumeDiv">
-          <div className="flex mt-10 text-xl flex-wrap justify-right">
+          <div className="mt-10 text-xl">
             <a
               href={Resume}
               download="Saral_Sainju_Resume"
               target="_blank"
               rel="noreferrer"
+              className="flex items-center gap-3"
             >
               Download my Resume
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="20"
+                width="20"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="#66fcf1"
+                  d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"
+                />
+              </svg>
             </a>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="1.5"
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m.75 12l3 3m0 0l3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"
-              />
-            </svg>
           </div>
-          <div className="flex mt-10 text-xl flex-wrap justify-right">
+          <div className="mt-10 text-xl">
             <a
-              href="https://flowcv.com/resume/inf368993o"
+              href={Resume}
               target="_blank"
-              className="pr-1"
               rel="noreferrer"
+              className="flex items-center gap-3"
             >
               View it Online
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="20"
+                width="20"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="#66fcf1"
+                  d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"
+                />
+              </svg>
             </a>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="1.5"
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
-              />
-            </svg>
           </div>
         </div>
       </div>
       <div className="tagname">
-        <p className="m-10 p-10 text-2xl text-gray-300 text-justify max-w-5xl">
+        <p className="scrollable-paragraph p-2 text-2xl text-gray-300 text-justify max-w-6xl">
           I am a dedicated full stack developer with a solid technical
           background. My goal is to design user-centered webexperiences that are
           fascinating, engaging, and enjoyable to explore. I am committed to
