@@ -9,6 +9,8 @@ import {
   faGithub,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+import KWSImg from "../assets/kws.jpg";
+import KUImg from "../assets/ku.jpg";
 
 export const projectDetails = [
   {
@@ -97,4 +99,31 @@ export const Icons = [
     icon: faTwitter,
     iconLink: "https://github.com/prg6useless",
   },
+];
+
+export const educationData = [
+  {
+    img: KWSImg,
+    title: "Kathmandu World School",
+    major: "+2 Science",
+    Year: "2018 - 2020",
+    CGPA: "CGPA : 3.5",
+  },
+  {
+    img: KUImg,
+    title: "Kathmandu University",
+    major: "B. Sc. in Computer Science",
+    Year: "2021 - 2025",
+    CGPA: "Pursuing",
+  },
+];
+
+export const skillImages = [
+  "../../src/assets/js.png",
+  "../../src/assets/react.png",
+  "../../src/assets/nodejs.png",
+  "../../src/assets/mongodb.png",
+  "../../src/assets/python.png",
+  "../../src/assets/git.png",
+  "../../src/assets/github.png",
 ];

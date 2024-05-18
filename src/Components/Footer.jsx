@@ -1,6 +1,6 @@
 import "../styles/Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Icons } from "./projectDetails";
+import { Icons } from "./data";
 
 export default function Footer() {
   return (

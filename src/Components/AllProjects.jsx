@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../styles/Skills.css";
-import { allProjects } from "./projectDetails";
+import { allProjects } from "./data";
 
 export default function AllProjects() {
   const [show, setShow] = useState(false);

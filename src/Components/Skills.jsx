@@ -1,16 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
+import { skillImages } from "./data";
 import "../styles/Skills.css";
-
-const images = [
-  "../../src/assets/js.png",
-  "../../src/assets/react.png",
-  "../../src/assets/nodejs.png",
-  "../../src/assets/mongodb.png",
-  "../../src/assets/python.png",
-  "../../src/assets/git.png",
-  "../../src/assets/github.png",
-];
 
 export default function Skills() {
   return (
@@ -20,7 +11,7 @@ export default function Skills() {
         <p className="text-4xl">My Skills</p>
       </div>
       <div className="imagesDiv m-20">
-        {images.map((image, index) => {
+        {skillImages.map((image, index) => {
           return (
             <div key={index} className="skillimagesDiv">
               <img

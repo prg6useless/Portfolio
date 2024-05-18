@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faProjectDiagram } from "@fortawesome/free-solid-svg-icons";
-import { projectDetails } from "./projectDetails";
+import { projectDetails } from "./data";
 import "../styles/Skills.css";
 import { Link } from "react-router-dom";
 

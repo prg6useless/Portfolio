@@ -1,6 +1,6 @@
 import "../styles/Home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Icons } from "./projectDetails";
+import { Icons } from "./data";
 
 import Resume from "../docs/Saral-Sainju-Resume.pdf";
 
