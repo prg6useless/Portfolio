@@ -11,6 +11,14 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import KWSImg from "../assets/kws.jpg";
 import KUImg from "../assets/ku.jpg";
+import jsImg from "../assets/js.png";
+import reactImg from "../assets/react.png";
+import nodejsImg from "../assets/nodejs.png";
+import mongodbImg from "../assets/mongodb.png";
+import pythonImg from "../assets/python.png";
+import gitImg from "../assets/git.png";
+import expressImg from "../assets/express.png";
+import figmaImg from "../assets/figma.png";
 
 export const projectDetails = [
   {
@@ -119,11 +127,12 @@ export const educationData = [
 ];
 
 export const skillImages = [
-  "../../src/assets/js.png",
-  "../../src/assets/react.png",
-  "../../src/assets/nodejs.png",
-  "../../src/assets/mongodb.png",
-  "../../src/assets/python.png",
-  "../../src/assets/git.png",
-  "../../src/assets/github.png",
+  jsImg,
+  reactImg,
+  nodejsImg,
+  mongodbImg,
+  expressImg,
+  pythonImg,
+  gitImg,
+  figmaImg,
 ];
