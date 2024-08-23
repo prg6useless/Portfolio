@@ -27,7 +27,7 @@ export default function Footer() {
         </ul>
         <div className="footer-bottom">
           <p>
-            copyright &copy;2023 <a href="#">Saral Sainju</a>{" "}
+            copyright &copy;2024 <a href="#">Saral Sainju</a>{" "}
           </p>
         </div>
       </div>

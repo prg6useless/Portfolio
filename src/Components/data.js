@@ -1,8 +1,9 @@
-import project_one from "../../src/assets/e-comm-react.png";
-import project_two from "../../src/assets/sentisurfer.png";
-import project_three from "../../src/assets/ciao.png";
-import project_four from "../../src/assets/solarsystem.png";
-import project_five from "../../src/assets/sirani.png";
+import project_one from "../../src/assets/projects/e-comm-react.png";
+import project_two from "../../src/assets/projects/sentisurfer.png";
+import project_three from "../../src/assets/projects/ciao.png";
+import project_four from "../../src/assets/projects/solarsystem.png";
+import project_five from "../../src/assets/projects/sirani.png";
+import project_six from "../../src/assets/projects/MovieMate.png";
 import {
   faFacebook,
   faTwitter,
@@ -10,15 +11,17 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import KWSImg from "../assets/kws.jpg";
-import KUImg from "../assets/ku.jpg";
-import jsImg from "../assets/js.png";
-import reactImg from "../assets/react.png";
-import nodejsImg from "../assets/nodejs.png";
-import mongodbImg from "../assets/mongodb.png";
-import pythonImg from "../assets/python.png";
-import gitImg from "../assets/git.png";
-import expressImg from "../assets/express.png";
-import figmaImg from "../assets/figma.png";
+import KUImg from "../assets//ku.jpg";
+import jsImg from "../assets/languages/js.png";
+import reactImg from "../assets/languages/react.png";
+import nodejsImg from "../assets/languages/nodejs.png";
+import mongodbImg from "../assets/languages/mongodb.png";
+import pythonImg from "../assets/languages/python.png";
+import gitImg from "../assets/languages/git.png";
+import cImg from "../assets/languages/c++.png";
+import githubImg from "../assets/languages/github.png";
+import expressImg from "../assets/languages/express.png";
+import figmaImg from "../assets/languages/figma.png";
 
 export const projectDetails = [
   {
@@ -61,7 +64,7 @@ export const allProjects = [
     projectImg: project_two,
     id: 2,
     projectDescription:
-      " A chrome extension that provides the sentiment of youtube comments.",
+      "A chrome extension that provides the sentiment of youtube comments; built with React-typescript and python",
     sourceCode: "https://github.com/prg6useless/Senti-Surfer-Extension.git",
   },
   {
@@ -85,15 +88,23 @@ export const allProjects = [
     projectImg: project_five,
     id: 5,
     projectDescription:
-      "A mental health app that tracks user's daily mood and sleep",
+      "A mental health app that tracks user's daily mood and sleep developed using Qt, a C++ framework",
     sourceCode: "https://github.com/prg6useless/sirani.git",
+  },
+  {
+    projectName: "MovieMate",
+    projectImg: project_six,
+    id: 6,
+    projectDescription:
+      "A movie-based web application to buy movie tickets; built using MERN Stack",
+    sourceCode: "https://github.com/prg6useless/MovieMate.git",
   },
 ];
 
 export const Icons = [
   {
     icon: faFacebook,
-    iconLink: "https://www.facebook.com/saral.sainju/",
+    iconLink: "https://github.com/prg6useless",
   },
   {
     icon: faGithub,
@@ -133,6 +144,8 @@ export const skillImages = [
   mongodbImg,
   expressImg,
   pythonImg,
-  gitImg,
+  cImg,
   figmaImg,
+  gitImg,
+  githubImg,
 ];

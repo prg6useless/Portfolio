@@ -82,8 +82,8 @@ export default function Home() {
           I am a dedicated full stack developer with a solid technical
           background. My goal is to design user-centered webexperiences that are
           fascinating, engaging, and enjoyable to explore. I am committed to
-          providing easy-to-use,visually appealing interfaces with a keen eye
-          for design and a solid basis in programming. By staying currentwith
+          providing easy-to-use, visually appealing interfaces with a keen eye
+          for design and a solid basis in programming. By staying current with
           the latest web technologies, I am able to develop dynamic, responsive
           websites that engage users across awide range of devices. With
           experience in JavaScript and modern frontend frameworks such as React,
