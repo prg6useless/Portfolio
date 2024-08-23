@@ -1,9 +1,10 @@
 import project_one from "../../src/assets/projects/e-comm-react.png";
 import project_two from "../../src/assets/projects/sentisurfer.png";
 import project_three from "../../src/assets/projects/ciao.png";
-import project_four from "../../src/assets/projects/solarsystem.png";
+// import project_four from "../../src/assets/projects/solarsystem.png";
+import project_four from "../../src/assets/projects/MovieMate.png";
 import project_five from "../../src/assets/projects/sirani.png";
-import project_six from "../../src/assets/projects/MovieMate.png";
+import project_six from "../../src/assets/projects/sentryhome.png";
 import {
   faFacebook,
   faTwitter,
@@ -75,14 +76,23 @@ export const allProjects = [
       "A full-stack web application built with React, Node.js, Express.js and MongoDB.",
     sourceCode: "https://github.com/prg6useless/ciao.git",
   },
+  // {
+  //   projectName: "Solar System Simulation",
+  //   projectImg: project_four,
+  //   id: 4,
+  //   projectDescription:
+  //     "A simulation of Solar System made with python and OpenGL",
+  //   sourceCode: "https://github.com/prg6useless/Solar-System.git",
+  // },
   {
-    projectName: "Solar System Simulation",
+    projectName: "MovieMate",
     projectImg: project_four,
     id: 4,
     projectDescription:
-      "A simulation of Solar System made with python and OpenGL",
-    sourceCode: "https://github.com/prg6useless/Solar-System.git",
+      "A movie-based web application to buy movie tickets; built using MERN Stack",
+    sourceCode: "https://github.com/prg6useless/MovieMate.git",
   },
+
   {
     projectName: "Sirani",
     projectImg: project_five,
@@ -92,12 +102,12 @@ export const allProjects = [
     sourceCode: "https://github.com/prg6useless/sirani.git",
   },
   {
-    projectName: "MovieMate",
+    projectName: "SentryHome",
     projectImg: project_six,
     id: 6,
     projectDescription:
-      "A movie-based web application to buy movie tickets; built using MERN Stack",
-    sourceCode: "https://github.com/prg6useless/MovieMate.git",
+      "SentryHome is a comprehensive surveillance system mobile application built using flutter for frontend, python for backend and firebase as a database.",
+    sourceCode: "https://github.com/prg6useless/SentryHome.git",
   },
 ];
 
